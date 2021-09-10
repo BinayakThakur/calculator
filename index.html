@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:200,300,regular,500,600,700,800,900" rel="stylesheet" />
+    <script src="script.js"> 
+        
+    </script>
+    <style>
+        .space{
+            height: 16%;
+            
+        }
+     
+        .card-5 {
+            box-shadow: 0 19px 38px rgba(82, 172, 30, 0.342), 0 15px 12px rgba(0,0,0,0.22);
+            
+        }
+       .dim{
+           height: 20%;
+           width: 100%;
+       }
+       .dim1{
+           height: 120%;
+           width: 100%;
+       }
+       .box{
+           width: 100%;
+           height: 500px;
+           font-family: Inconsolata;
+           padding-left:3%;
+           padding-top: 2%;
+           overflow: auto;
+       }
+    </style>        
+</head>
+<body>
+    <div class="space"></div>
+    <div class="container">
+        <div class="row">
+            
+            <div class="card card-5 mx-auto " style="width: 25rem;">
+                
+                <div class="card-body mb-3 ">
+                    <button type="button" class="btn btn-outline-success mb-5 mt-3 dim" id="output">OUTPUT</button>
+                    <div class="row mb-4">
+                        <div class="col"><button type="button" class="btn btn-success dim1 mb-2" id="number1" onclick="one()">1</button></div>
+                        <div class="col"><button type="button" class="btn btn-success dim1 mb-2" id="number2"  onclick="two()">2</button></div>
+                        <div class="col"><button type="button" class="btn btn-success dim1 mb-2" id="number3" onclick="three()">3</button></div>
+                        <div class="col"><button type="button" class="btn btn-dark dim1 mb-2" id="plus" onclick="addition()">+</button></div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col"><button type="button" class="btn btn-success dim1 mt-2" id="number4" onclick="four()">4</button></div>
+                        <div class="col"><button type="button" class="btn btn-success dim1 mt-2" id="number5" onclick="five()">5</button></div>
+                        <div class="col"><button type="button" class="btn btn-success dim1 mt-2" id="number6" onclick="six()">6</button></div>
+                        <div class="col"><button type="button" class="btn btn-dark dim1 mt-2" id="minus" onclick="minus()">-</button></div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col"><button type="button" class="btn btn-success dim1 mt-2" id="number7" onclick="seven()">7</button></div>
+                        <div class="col"><button type="button" class="btn btn-success dim1 mt-2" id="number8" onclick="eight()">8</button></div>
+                        <div class="col"><button type="button" class="btn btn-success dim1 mt-2" id="number9" onclick="nine()">9</button></div>
+                        <div class="col"><button type="button" class="btn btn-dark dim1 mt-2" id="multiply" onclick="multiply()">*</button></div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col"><button type="button" class="btn btn-success dim1 mt-2" id="decimal" onclick="decimal()">.</button></div>
+                        <div class="col"><button type="button" class="btn btn-success dim1 mt-2" id="number0" onclick="zero()">0</butt"on></div>
+                        <div class="col"><button type="button" class="btn btn-success dim1 mt-2" id="equals" onclick="equate()">=</button></div>
+                        <div class="col"><button type="button" class="btn btn-dark dim1 mt-2" id="divide" onclick="divide()">/</button></div>
+                    </div>
+                </div>
+                
+              </div>
+              <div class="col">
+                <div class="box card-5">
+                    <h1>
+                        Expressions<br>
+                    </h1>
+                    <h6 id="con" class="mb-2">
+                        
+                    </h4>
+                </div>
+              </div>
+        </div>     
+    </div>
+</body>
+</html>
