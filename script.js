@@ -79,7 +79,7 @@ function equate(){
     var con=document.getElementById("con");
     con.innerHTML=con.innerHTML+"<br><b> Output : "+solved + "</b><br>";
     cal=[];
-    screen.innerHTML="OUTPUT";
+    screen.innerHTML=solved;
     value="";
 }
 function one(){
